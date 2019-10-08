@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "date": "10/30/2018",
+        "amount": 9,
+        "latitude": 25.865243,
+        "longitude": 107.220508
+    }, 
+    {
+        "id": 2,
+        "date": "3/12/2019",
+        "amount": 40,
+        "latitude": 16.356791,
+        "longitude": 102.8259445
+    }, {
+        "id": 3,
+        "date": "7/6/2019",
+        "amount": 61,
+        "latitude": -7.3090733,
+        "longitude": 108.1859765
+    }, {
+        "id": 4,
+        "date": "9/13/2019",
+        "amount": 22,
+        "latitude": 42.3145494,
+        "longitude": 23.2989944
+    }, {
+        "id": 5,
+        "date": "8/27/2019",
+        "amount": 92,
+        "latitude": 43.555403,
+        "longitude": 1.503894
+    }, {
+        "id": 6,
+        "date": "4/29/2019",
+        "amount": 3,
+        "latitude": -6.1870969,
+        "longitude": 106.8655689
+    }, {
+        "id": 7,
+        "date": "10/29/2018",
+        "amount": 87,
+        "latitude": -6.543601,
+        "longitude": 111.0177251
+    }, {
+        "id": 8,
+        "date": "3/15/2019",
+        "amount": 67,
+        "latitude": -15.4524821,
+        "longitude": -47.6093177
+    }, {
+        "id": 9,
+        "date": "10/10/2018",
+        "amount": 71,
+        "latitude": 50.511083,
+        "longitude": 30.7909
+    }, {
+        "id": 10,
+        "date": "6/13/2019",
+        "amount": 82,
+        "latitude": 44.439233,
+        "longitude": 129.500041
+    }, {
+        "id": 11,
+        "date": "12/30/2018",
+        "amount": 47,
+        "latitude": 45.6408779,
+        "longitude": 20.4256633
+    }, {
+        "id": 12,
+        "date": "6/6/2019",
+        "amount": 81,
+        "latitude": 33.8779023,
+        "longitude": 9.745565
+    }, {
+        "id": 13,
+        "date": "4/18/2019",
+        "amount": 62,
+        "latitude": 51.2253204,
+        "longitude": 20.1634178
+    }, {
+        "id": 14,
+        "date": "3/19/2019",
+        "amount": 54,
+        "latitude": 55.816131,
+        "longitude": 37.8768991
+    }, {
+        "id": 15,
+        "date": "4/9/2019",
+        "amount": 54,
+        "latitude": 37.8307393,
+        "longitude": -25.3919027
+    }, {
+        "id": 16,
+        "date": "12/25/2018",
+        "amount": 77,
+        "latitude": 27.6791846,
+        "longitude": 30.7738154
+    }, {
+        "id": 17,
+        "date": "2/17/2019",
+        "amount": 55,
+        "latitude": "56.16667",
+        "longitude": "22.1"
+    }, 
+    {
+        "id": 18,
+        "date": "10/24/2018",
+        "amount": 12,
+        "latitude": 42.8911415,
+        "longitude": 73.2320957
+    }, 
+    {
+        "id": 19,
+        "date": "4/6/2019",
+        "amount": 68,
+        "latitude": -4.6389001,
+        "longitude": -79.7147196
+    }, 
+    {
+        "id": 20,
+        "date": "7/11/2019",
+        "amount": 25,
+        "latitude": 51.5491768,
+        "longitude": 7.2092264
+    }
+]
