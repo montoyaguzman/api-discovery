@@ -83,3 +83,7 @@ app.post('/v2/movimientos', (req, res) => {
   console.log('nuevo: ', nuevo)
   res.send('Movimiento dado de alta')
 })
+
+app.put('/v2/movimientos', (req, res) => {
+  res.send('hemos recibido PUT en MOVIMIENTOS')
+})
