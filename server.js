@@ -10,14 +10,19 @@ var movimientosV2 = require('./movimientosV2.json')
 var bodyParse = require('body-parser')
 app.use(bodyParse.json())
 app.use( (req, res, next)=> {
-  res.header('dAccess-Control-Allow-Origin', '*'),
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type Accept')
+  res.header('Access-Control-Allow-Origin', '*'),
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
   next()
 })
 
 var requestjson =  require('request-json')
 var urlClientesMLab = 'https://api.mlab.com/api/1/databases/jmontoya/collections/Customers?apiKey=GOLqWa850qO8tsdCUdby6eq9eKPInBkt'
 var clienteMLab = requestjson.createClient(urlClientesMLab)
+
+
+var baseURL = 'https://api.mlab.com/api/1/databases/jmontoya/collections/'
+var apiKey = 'apiKey=GOLqWa850qO8tsdCUdby6eq9eKPInBkt'
+var mlabUrl = ''
 
 
 app.listen(port);
@@ -116,4 +121,24 @@ app.post('/v3/customers', (req, res) => {
   })
 })
 
+app.post('/v4/login', (req, res) => {
+  let email = req.body.email
+  let password = req.body.password
+  let query = `q={ "email":"${email}", "password":"${password}" }`
 
+  clienteMLab = requestjson.createClient(`${baseURL}/users?${apiKey}&${query}`)
+  console.log('url : ', `${baseURL}/users?${apiKey}&query`)
+
+  clienteMLab.get('', (err, resM, body) => {
+    if(!err) {
+      if(body.length === 1) {
+        res.status(200).send('¡Usuario válido!')
+      } else {
+        res.status(404).send('¡Usuario no encontrado!')
+      }
+    } else {
+      console.log(body)
+    }
+  })
+
+})
