@@ -6,6 +6,7 @@ var express = require('express'),
 
 var path = require('path');
 var movimientosV2 = require('./movimientosV2.json')
+var user = require('./user.json')
 
 var bodyParse = require('body-parser')
 app.use(bodyParse.json())
@@ -141,4 +142,25 @@ app.post('/v4/login', (req, res) => {
     }
   })
 
+})
+
+
+
+/*DOMICILIACIONES*/
+
+app.get('/v0.1/user', (req, res)=> {
+  res.json(user)
+})
+
+app.get('/v0.1/user/:index', (req, res)=> {
+  let indexElement = req.params.index - 1
+  console.log('llegue...', indexElement)
+  res.json(user[indexElement])
+})
+
+app.post('/v0.1/user', (req, res) => {
+  let newUser = req.body
+  user.push(newUser)
+  res.send('Movimiento dado de alta')
+  console.log(newUser)
 })

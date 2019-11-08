@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "admin",
+        "app": "app-admin",
+        "apm": "apm-admin",
+        "celphone": "none",
+        "email": "admin@admin.com",
+        "password": "admin"
+    },
+    {
+        "id": 2,
+        "name": "mario",
+        "app": "app-mario",
+        "apm": "apm-mario",
+        "celphone": "none",
+        "email": "mario@mario.com",
+        "password": "mario"
+    }
+]
