@@ -147,6 +147,42 @@ app.post('/v4/login', (req, res) => {
 
 
 /*DOMICILIACIONES*/
+app.post('/login', (req, res)=> {
+  console.log('body', req.body)
+  let email = req.body.email || ''
+  let password = req.body.password || ''
+  console.log(`email: ${email} - password: ${password}`)
+  if(email === 'montoyaguzman7@gmail.com' && password === '1234') {
+    res.status(200).send( { 
+      code: 200, 
+      message: 'login exitoso!', 
+      login: true,
+      email: 'montoyaguzman7@gmail.com',
+      perfil: 'customer',
+    })
+    // perfil: 'manage',
+  } else {
+    res.status(404).send({ code: 404, message:'no encontrado', login: false})
+  }
+})
+
+app.post('/signup', (req, res)=> {
+  console.log('body', req.body)
+  let user = req.body.user || {}
+  console.log(`body.user: ${user}`)
+  if(user) {
+    res.status(200).send( { 
+      code: 200, 
+      message: 'registro exitoso!', 
+    })
+  } else {
+    res.status(404).send({ code: 404, message:'no se realizo el registro', login: false})
+  }
+})
+
+
+
+
 
 app.get('/v0.1/user', (req, res)=> {
   res.json(user)
